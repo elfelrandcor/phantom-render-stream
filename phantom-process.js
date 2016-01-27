@@ -128,6 +128,7 @@ var loop = function() {
     var render = function() {
       setTimeout(function() {
         if (line.printMedia) forcePrintMedia();
+        if (line.evaluate) page.evaluate(line.evaluate);
         page.render(line.filename, {format:line.format || 'png', quality:line.quality || 100});
         page = null;
         line.success = true;
