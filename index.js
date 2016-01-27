@@ -289,6 +289,7 @@ var create = function(opts) {
         quality:opts.quality,
         format     : opts.format,
         printMedia : opts.printMedia,
+        evaluate   : opts.evaluate,
         expects    : opts.expects,
         timeout    : opts.timeout
       }, ropts);
